@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV-3</title>
+</head>
+<style>
+.dform{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 4%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+label{
+    font-size: 3vw;
+    color: #F2F4F3;
+}
+.form1,.form2{
+    background-color: #5E503F;
+    width: 500px;
+    height: 650px;
+    margin: 10px;
+    text-align: center;
+}
+.f-data1 input{
+    padding-left: 5px;
+    width: 300px;
+    height: 35px;
+    margin: 15px;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    color: #F2F4F3;
+    border-bottom: solid 3px #A9927D;
+}
+.f-data1 button{
+    margin-top: 20%;
+    color: #F2F4F3;
+    font-size: 20px;
+    background-color: #49111C;
+    width: 140px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.f-data1 button:hover{
+    box-shadow:  0 0 1em black;
+}
+.f-data1 textarea{
+    resize: none;
+    background-color: transparent;
+    border-radius: 13px;
+    color: #F2F4F3;
+    font-size: 20px;
+    border: solid 3px #A9927D;
+    outline: none;
+    padding-left: 10px;
+}
+.f-data1 input::placeholder,.f-data1 textarea::placeholder{
+    color: #F2F4F3;
+}
+.f-data1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+<body>
+    <div class="dform">
+        <div class="form1">
+            <label for="">Dados</label>
+            <form class="f-data1" action="">
+                <input type="text" placeholder="Nome">
+
+                <button onclick="return show()">Gerar</button>
+            </form>
+        </div>
+        <div class="form2">
+            <label for="">Abnt Parser</label>
+            <form class="f-data1" action="">
+                <textarea name=""cols="40" rows="20" placeholder="Nome formatado"></textarea>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questoes</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: #0cbaba;
+        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .cont{
+        border-radius: 14px;
+        background-color: #b3cdd1;
+        background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+        width:70%;
+        height:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }.chooser{
+        width: 50%;
+        height: 50%;
+        display: flex;
+
+    }
+    .chooser div{
+        flex-basis: 50%;
+        border-radius: 25%;
+        
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        font-size: 2vw;
+        cursor: pointer;
+        transition: background 0.5s ease-out;   
+    }
+    .chooser div:hover{
+        background-color: lightpink;
+
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="chooser">
+            <div class="item">
+                <a href="abnt.html" style="text-decoration: none;">Abnt Parser</a>
+            </div>
+            <div class="item">
+                <a href="hanoi.html" style="text-decoration: none;">Torre de Hanói</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
